@@ -22,8 +22,8 @@
                     <td style="font-size: 22px; text-align: center;">{{ timbre.pays }}</td>
                     <td style="font-size: 22px; text-align: center;">{{ timbre.certifie }}</td>
                     <td style="font-size: 22px; text-align: center;">{{ timbre.etat_timbre }}</td>
-                    <td style="font-size: 22px; text-align: center;"><a style="text-decoration: none;"  href="{{ base }}/timbre/show/{{ timbre.id }}">Voir le timbre</a></td>
-                    <td style="font-size: 22px; text-align: center;"><a style="text-decoration: none;" href="{{ base }}/timbre/edit/{{ timbre.id }}">Éditer</a>  /  <a style="text-decoration: none;" href="{{ base }}/timbre/delete/{{ timbre.id }}">Supprimer</a>   </td>
+                    <td style="font-size: 22px; text-align: center;"><a style="text-decoration: none;"  href="{{ base }}/timbre/show?id={{ timbre.id }}">Voir le timbre</a></td>
+                    <td style="font-size: 22px; text-align: center;"><a style="text-decoration: none;" href="{{ base }}/timbre/edit?id={{ timbre.id }}">Éditer</a>  /  <a style="text-decoration: none;" href="{{ base }}/timbre/delete?id={{ timbre.id }}">Supprimer</a>   </td>
 
                 </tr>
             {% endfor %}

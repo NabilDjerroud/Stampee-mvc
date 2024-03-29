@@ -18,7 +18,6 @@ abstract class CRUD extends \PDO {
             return false;
         }
     }
-
     final public function selectId($value){
         $sql = "SELECT * FROM $this->table WHERE $this->primaryKey = :$this->primaryKey";
         $stmt = $this->prepare($sql);
@@ -32,6 +31,7 @@ abstract class CRUD extends \PDO {
         }
     }
     
+    
     final public function selectByUser($value)
     {
         $sql = "SELECT * FROM $this->table WHERE utilisateur_id = $value";
@@ -42,13 +42,23 @@ abstract class CRUD extends \PDO {
         }
     }
 
-    public function selectByTimbreId($timbreId)
+    public function selectByTimbreId($id)
     {
-        $sql = "SELECT * FROM $this->table WHERE timbre_id = :timbre_id";
-        $stmt = $this->prepare($sql);
-        $stmt->bindValue(":timbre_id", $timbreId);
-        $stmt->execute();
-        return $stmt->fetchAll();
+        $sql = "SELECT * FROM image WHERE timbre_id = $id";
+    
+        if ($stmt = $this->query($sql)) {
+            $queryResults = $stmt->fetchAll();
+    
+            // Verificar se há resultados
+            if (!empty($queryResults)) {
+                return $queryResults[0]['image_principale'];
+            } else {
+                // Retorna null se não houver resultados
+                return null;
+            }
+        } else {
+            return false;
+        }
     }
     
     public function insert($data){

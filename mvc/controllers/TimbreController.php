@@ -77,20 +77,32 @@ class TimbreController {
         }
     }
     
-    public function show($id)
-    {
-        $timbreModel = new Timbre();
-        $imageModel = new Image();
-
-        // Récupérer les détails du timbre
-        $timbre = $timbreModel->selectId($id);
+    public function show()
+{
+    // Vérifiez d'abord si l'ID du timbre est passé en paramètre GET
+    if (isset($_GET['id'])) {
+        $timbreId = $_GET['id'];
         
-        // Récupérer les images associées au timbre
-        $images = $imageModel->selectByTimbreId($id);
+        // Utilisez la méthode selectId pour récupérer les détails du timbre
+        $timbreModel = new Timbre();
+        $timbre = $timbreModel->selectId($timbreId);
+        
+        // Si le timbre est trouvé
+        if ($timbre) {
+            $imageModel = new Image();
+            $images = $imageModel->selectByTimbreId($timbre['id']);
 
-        // Passer les données du timbre et des images à la vue
-        return View::render('timbre/show', ['timbre' => $timbre, 'images' => $images]);
+            return View::render('timbre/show', ['timbre' => $timbre, 'image' => $images]);
+        } else {
+            echo "Erreur : Le timbre avec l'ID $timbreId n'a pas été trouvé.";
+        }
+    } else {
+        echo "Erreur : Aucun ID de timbre spécifié dans les paramètres GET.";
     }
+}
+
+    
+
     
 }
 
