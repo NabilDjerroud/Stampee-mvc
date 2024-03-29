@@ -1,0 +1,62 @@
+.navigation_header {
+  background-color: var(--coul-principale);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--police-principale);
+  padding: var(--space-m);
+}
+
+.navigation_header a {
+  /* Ajoutez vos styles pour les liens ici */
+
+  transition: transform 0.25s ease-in; /* La transition est définie ici */
+}
+
+.navigation_header a:hover {
+  color: var(--coul-secondaire);
+  transform: scale(1.1); /* Par exemple, pour une animation de mise à l'échelle au survol */
+}
+
+.navigation_header a::before {
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.navigation_footer {
+  background-color: var(--coul-principale);
+  display: flex;
+  font-family: var(--police-principale);
+  padding: var(--space-m);
+  justify-content: space-around;
+  padding-top: var(--space-xxl);
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+
+ 
+}
+
+.logo {
+  margin: var(--space-xl);
+}
+
+.fas {
+  margin-right: var(--space-xs);
+}
+
+
+@keyframes wave {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1.5);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}

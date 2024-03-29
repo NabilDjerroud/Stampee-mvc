@@ -1,0 +1,19 @@
+:root {
+  --coul-principale: #1d3b58;
+  --coul-secondaire: #16a085;
+  --coul-secondaire-pale: #2980b9;
+  --coul-secondaire-fonce: #0a6150;
+  --coul-accent: #f39c12;
+  --coul-noir: #161616;
+  --coul-blanc: rgb(248, 246, 239);
+  --coul-pale: #f2f2f5;
+
+  --coul-info: #2980b9;
+  --coul-succes: #4caf50;
+  --coul-avertissement: #ff9800;
+  --coul-danger: #c0392b;
+  --coul-muted: #6c757d;
+
+  --coul-bouton-fond: var(--coul-principale);
+  /* Ajoutez vos couleurs au fur et à mesure */
+}

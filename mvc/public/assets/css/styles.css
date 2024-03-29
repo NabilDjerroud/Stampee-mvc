@@ -1,0 +1,27 @@
+/* Variables */
+@import url("./variables/reset.css");
+
+/* Couleurs */
+@import url("./variables/colors.css");
+/* Typo */
+@import url("./variables/typography.css");
+
+/* Espacement */
+@import url("./variables/spacing.css");
+
+/* Composantes individuelles (Ex: bouton) */
+@import url("./components/navigation.css");
+@import url("./components/etapes.css");
+@import url("./components/button.css");
+@import url("./components/card.css");
+@import url("./components/filters.css");
+@import url("./components/form.css");
+/* Modules/mise en page spéciale (Ex: Grilles, formulaires)*/
+@import url("./layout/header.css");
+@import url("./pages/accueil.css");
+@import url("./layout/footer.css");
+@import url("./layout/vedette.css");
+@import url("./layout/general.css");
+@import url("./layout/grilleCarte.css");
+@import url("./variables/mediaqueries.css");
+/* Exceptions pour certaines pages */

@@ -1,0 +1,20 @@
+.contactez-nous {
+  display: grid;
+}
+
+.actualites {
+  display: grid;
+}
+
+.contactez-nous > h3 {
+  color: white;
+  font-size: var(--police-s);
+  font-weight: 700;
+}
+
+
+.actualites > h3 {
+  color: white;
+  font-size: var(--police-s);
+  font-weight: 600;
+}

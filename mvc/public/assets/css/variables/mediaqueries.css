@@ -1,0 +1,224 @@
+:root {
+  /* Desktop first */
+  /* --media-wide: 1400px;
+    --media-desktop: 1200px;
+    --media-tablet-landscape: 1024px;
+    --media-tablet-portrait: 768px;
+    --media-phone: 480px; */
+}
+
+@media screen and (max-width: 480px) {
+  .connexion-langue {
+    margin-top: var(--space-l);
+  }
+  /* Ajustements pour le hero banner */
+  .hero-banner {
+    height: auto; /* Réduire la hauteur du hero banner */
+    padding: var(--space-l) var(--space-s); /* Ajuster les marges */
+  }
+
+  .catalogue {
+    padding: var(--space-s);
+  }
+
+  .filtres {
+    width: 100%;
+    position: static;
+    display: grid;
+    grid-template-rows: auto auto; /* Deux rangées de taille automatique */
+    grid-template-columns: repeat(
+      2,
+      minmax(100px, 1fr)
+    ); /* Colonnes automatiques avec largeur minimale de 100px */
+    gap: 20px; /* Espacement entre les éléments */
+  }
+  .catalogue {
+    display: flex;
+    flex-direction: column;
+  }
+  div.prix {
+    display: flex;
+    flex-direction: column;
+  }
+  .div-bouton-filtre {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .filtres input[type="number"] {
+    width: 60%;
+  }
+
+  .tuile {
+    width: 100%;
+  }
+
+  .logo {
+    width: var(--space-xxl);
+  }
+
+  .tuile p {
+    color: var(--coul-principale);
+  }
+  .lien_page a {
+    font-size: var(--space-s);
+  }
+
+  /* Ajustements pour les timbres en vedette */
+  .container_tuile_vedette {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(100px, 1fr)
+    ); /* Ajuster les colonnes */
+    gap: var(--space-xs); /* Ajuster l'espacement entre les tuiles */
+  }
+  .container_tuile_vedette > :nth-child(n + 4):nth-child(-n + 5) {
+    display: none;
+  }
+
+  .tuile_vedette {
+    width: 100%;
+  }
+  .fa-heart {
+    transition: color 0.3s ease;
+  }
+  .fa-heart:hover {
+    color: red;
+  }
+  input[type="text"] {
+    margin-right: 0;
+  }
+  button[type="submit"] {
+    margin-top: var(--space-s);
+    margin-left: 0;
+  }
+
+  .bouton-miser {
+    width: 100%;
+    padding: var(--space-m);
+  }
+  .icones i {
+    font-size: var(--space-xl);
+  }
+  /* Ajustements pour la pagination */
+  .pagination {
+    padding: var(--space-xs); /* Ajuster les marges */
+  }
+
+  .tuile_vedette p {
+    color: var(--coul-principale);
+    text-align: left;
+  }
+
+  /* Ajustements pour les avis utilisateur */
+  .avis_utilisateur {
+    padding: var(--space-m) var(--space-s); /* Ajuster les marges */
+  }
+
+  /* Ajustements pour le footer */
+  .navigation_footer {
+    flex-direction: column; /* Réorganiser les liens en colonne */
+    align-items: center; /* Centrer les liens */
+  }
+
+  /* Ajustements pour la navigation */
+  .navigation_header {
+    flex-direction: column; /* Réorganiser les liens en colonne */
+    align-items: center; /* Centrer les liens */
+  }
+
+  .avis img {
+    width: 100%;
+  }
+
+  .main-enchere {
+    margin: 0px 20px 20px 20px;
+  }
+
+  .text {
+    padding: 20px;
+  }
+
+  .text h2 {
+    font-size: var(--police-xl);
+    text-align: center;
+  }
+
+  .text p {
+    font-size: var(--police-l);
+    text-align: center;
+  }
+
+  .grid-container {
+    padding: 0px 20px 20px 20px;
+
+    grid-template-columns: 1fr;
+  }
+
+  .fonctionnement h2 {
+    font-size: 40px;
+  }
+
+  p.p-enchere-rare {
+    font-size: var(--police-xl);
+    text-align: center;
+    margin-bottom: var(--space-l);
+  }
+
+  section h1 {
+    font-size: 150px;
+  }
+
+  .info {
+    width: 100%;
+  }
+  .bouton-miser-enchere {
+    width: 100%;
+  }
+
+  .grid-item {
+    border-radius: 0 var(--space-xxl) 0 var(--space-xxl);
+  }
+  .grid-item h3 {
+    text-align: center;
+  }
+
+  .miser-sur-un-timbre {
+    background-color: var(--coul-blanc);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hero-banner-enchere h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .navigation_footer {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation_footer h4{
+    font-size: var(--police-l);
+    margin-bottom: var(--space-m);
+  }
+
+  .contactez-nous {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: var(--space-xl);
+  }
+
+  .actualites {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: var(--space-xl);
+  }
+
+  
+}

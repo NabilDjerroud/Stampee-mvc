@@ -1,0 +1,163 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  color: var(--coul-noir);
+  background-color: var(--coul-pale);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hello-message{
+  margin: var(--space-l);
+  padding: var(--space-l);
+  color: var(--coul-noir);
+}
+/*hero banner*/
+.hero-banner {
+  background-image: url("../../img/photos/stamp2.png");
+
+  height: 300px;
+  /* color: var(--coul-principale); */
+  padding: var(--space-xxl);
+  text-align: center;
+  margin-bottom: var(--space-xxl);
+}
+
+.hero-banner h1 {
+  font-size: var(--police-xxl);
+  margin-bottom: var(--space-l);
+  color: var(--coul-blanc);
+}
+
+/*section avis*/
+.avis_utilisateur {
+  background-color: var(--coul-accent);
+  color: var(--coul-principale);
+  padding: var(--space-xxl);
+  text-align: center;
+  margin-top: var(--space-xxl);
+  margin-bottom: var(--space-xxl);
+  box-shadow: 1px 1px 5px 5px rgb(184, 180, 180);
+}
+
+.avis_utilisateur h2 {
+  font-family: var(--police-principale);
+
+  font-size: var(--police-xl);
+  font-weight: 600;
+}
+
+/*barre de recherche*/
+
+form {
+  margin-top: var(--space-l);
+  margin-bottom: var(--space-l);
+}
+
+input[type="text"] {
+  padding: var(--space-xs);
+  border-radius: var(--space-xxs);
+  border: 1px solid #ccc;
+  font-family: var(--police-principale);
+  font-size: var(--police-s);
+  margin-right: var(--space-xs);
+}
+
+input[type="password"] {
+  padding: var(--space-xs);
+  border-radius: var(--space-xxs);
+  border: 1px solid #ccc;
+  font-family: var(--police-principale);
+  font-size: var(--police-s);
+  margin-right: var(--space-xs);
+}
+
+input[type="date"] {
+  padding: var(--space-xs);
+  border-radius: var(--space-xxs);
+  border: 1px solid #ccc;
+  font-family: var(--police-principale);
+  font-size: var(--police-s);
+  margin-right: var(--space-xs);
+}
+
+
+input[type="email"] {
+  padding: var(--space-xs);
+  border-radius: var(--space-xxs);
+  border: 1px solid #ccc;
+  font-family: var(--police-principale);
+  font-size: var(--police-s);
+  margin-right: var(--space-xs);
+}
+
+.avis_utilisateur p {
+  color: var(--coul-principale);
+  margin-top: var(--police-s);
+  font-family: var(--police-paragraphe);
+  font-weight: 600;
+}
+
+.main-enchere {
+  border: 1px solid #ccc;
+  padding: var(--space-l);
+  border-radius: var(--space-l);
+  border-top: 6px solid var(--coul-accent);
+  border-bottom: 6px solid var(--coul-accent);
+  margin: auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  padding: var(--police-xl);
+  justify-content: space-between;
+}
+
+.image {
+  height: fit-content;
+  width: 100%;
+  object-fit: contain;
+  border-radius: var(--police-xxs);
+  margin-bottom: var(--police-s);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.miser-sur-un-timbre {
+  background-color: var(--coul-blanc);
+  display: flex;
+}
+
+.image-contain {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.hero-banner-enchere {
+  background-size: cover;
+  background-position: center;
+  color: var(--coul-principale);
+  padding: var(--space-xxl);
+  text-align: center;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--space-xxl);
+}
+.fa-heart {
+  transition: color 0.3s ease;
+}
+.fa-heart:hover {
+  color: red;
+}
+
+.navigation_header svg{
+  cursor: pointer;
+  margin-right: var(--space-l);
+}
